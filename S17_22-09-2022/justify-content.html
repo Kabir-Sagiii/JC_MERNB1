@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .containerStart {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 500px;
+        height: 300px;
+        border: 2px solid black;
+      }
+      .containerCenter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        border: 2px solid black;
+      }
+      .containerEnd {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 500px;
+        height: 300px;
+        border: 2px solid black;
+      }
+      .box {
+        text-align: center;
+        color: white;
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        background-color: blueviolet;
+      }
+      .box2 {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerStart">
+      <div class="box box1" id="box1">Box 1</div>
+      <div class="box box2" id="box2">Box 2</div>
+    </div>
+
+    <div class="containerCenter">
+      <div class="box box1" id="box1">Box 1</div>
+      <div class="box box2" id="box2">Box 2</div>
+    </div>
+
+    <div class="containerEnd">
+      <div class="box box1" id="box1">Box 1</div>
+      <div class="box box2" id="box2">Box 2</div>
+    </div>
+  </body>
+</html>
