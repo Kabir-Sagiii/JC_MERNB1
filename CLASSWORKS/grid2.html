@@ -11,32 +11,72 @@
             margin: 0;
             padding: 0;
         }
+        h1 {
+            color: yellowgreen;
+            margin: 40px auto;
+            width: 25%;
+            height: 50px;
+        }
+        h1::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 150px;
+            height: 3px;
+            background-color: yellow;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
         #grid-container {
-            width: 800px;
-            height: 800px;
+            width: 730px;
+            height: 440px;
             display: grid;
-            grid-template-columns: 200px 200px 200px 200px;
-            /* border: 2px solid red; */
-            grid-gap: 5px;
-            margin: 20px auto;
+            grid-template-columns: 200px 200px 200px 100px;
+            grid-template-rows: 50px 100px 200px 50px;
+            border: 2px solid red;
+            grid-gap: 10px;
+            margin: 40px auto;
 
         }
         .box {
             border: 2px solid yellow;
+            background-color: green;
+            margin: 5px;
         }
         .box1 {
-            grid-column-start: 1;
-            grid-column-end: 5;
+            /* margin-top: 5px; */
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
             /* height: 50px; */
-
+        }
+        .box2 {
+            grid-column: 1 / 2;
+            grid-row: 2 /3;
+        }
+        .box3 {
+            grid-column: 2 / 3;
+            grid-row: 2 /3;
+        }
+        .box4 {
+            grid-column: 3 / 4;
+            grid-row: 2 /3;
         }
         .box5 {
-            grid-row-start: 2;
-            grid-column-end: 4;
+            grid-column: 4 /5;
+            grid-row: 2 /4;
+        }
+        .box6 {
+            grid-column: 1 /4;
+            grid-row: 3 /4;
+        }
+        .box7 {
+            grid-column: 1 /5;
+            grid-row: 4 /5;
         }
 
 
     </style>
+    <h1>GRID TEMPLATE</h1>
     <div id="grid-container">
         
         <div class="box box1">
