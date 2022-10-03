@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+                *{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        #grid-container {
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            /* border: 2px solid red; */
+            grid-gap: 10px;
+            margin: 20px auto;
+
+        }
+        .box {
+            border: 2px solid yellow;
+        }
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* height: 50px; */
+
+        }
+        .box3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+
+    </style>
+    <div id="grid-container">
+        
+        <div class="box box1">
+        
+        </div>
+        <div class="box box2">
+        
+        </div>
+        <div class="box box3">
+        
+        </div>
+        <div class="box box4">
+            
+        </div>
+        <div class="box box5">
+            
+        </div>
+        <div class="box box6">
+            
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
