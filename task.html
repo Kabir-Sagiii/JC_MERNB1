@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<html lang="en">
+<head>
+    
+    <title>Flex-assignment</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0 ;
+        }
+
+        /* navbar section style */
+        .flex {
+            display: flex;
+            background-color: black;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 0;
+            height: 50px;
+            align-items: center;
+        }
+        .flex .logo {
+            margin-left: 200px;
+        }
+        
+        .flex .logo h1 {
+            color: white;
+            font-size: 18.72px;
+        }
+        .flex .navlink {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 200px;
+        }
+
+        .flex .navlink a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-left: 50px;
+            font-size: 16px;
+            
+
+        }
+        /* main/landingPage section styling */
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: yellow; */
+            width: 100%;
+            height: 82vh;
+        }
+        #main > div {
+            margin: 10px;
+            /* background-color: green; */
+        }
+
+       #main .image {
+            width: 100%;
+            height: 70vh;
+            /* background-color: red; */
+
+        }
+        #main .image img {
+            border-radius: 50%;
+            margin: 100px;
+
+        }
+
+        /* figure and figcprure style */
+
+        #figrow {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #figrow img {
+            border-radius: 50%;
+        }
+        #figrow h3 {
+            margin: 18.5px;
+            padding-left: 50px;
+        }
+
+        /* footer styling */
+        footer {
+            background-color: rgb(16, 16, 49);
+        }
+        #footer-div {
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgba(38, 83, 230, 0.78);
+            color: white;
+            padding-right: 20px;
+            
+        }
+
+        #footer-div p {
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 0px;
+        }
+        #footer-main p{
+            word-wrap: break-word;
+            width: 200px;            
+        }
+        #footer-div .bi {
+            margin-left: 40px;
+            color: white;
+            font-size: 15px;
+        
+        }
+
+        #footer-main .heads {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 30px;
+            color: white;
+        }
+
+        #footer-main .heads h2 {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 50px;
+
+        }
+
+        #footer-main .heads h2::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: blue;
+            height: 2px;
+            width: 100px;
+            margin-top: 10px;
+
+        }
+
+        #footer-foot {
+            width: 100%;
+            background-color: rgb(12, 12, 37);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        
+
+
+    </style>
+
+    <!-- navbar section -->
+
+    <div class="flex">
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="navlink">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Resume</a>
+            <a href="">Contact</a>
+        </div>
+
+    </div>
+
+    <!-- main/landingpage section -->
+    <div id="main">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/7247412/pexels-photo-7247412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="300px" height="300px" alt="image">
+        </div>
+        <div class="content">
+            <h4>Hi there!!</h4>
+            <h2>I am Ebenezer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum numquam quia fugiat impedit perferendis asperiores excepturi quisquam nisi sequi a ducimus culpa cupiditate soluta, omnis quae ratione pariatur fugit dolor provident laudantium assumenda illo totam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, reiciendis labore eligendi soluta inventore quos debitis expedita. Qui cupiditate dolore suscipit, excepturi et aspernatur dicta alias provident animi odio harum voluptate adipisci, necessitatibus molestias vero laborum architecto consequatur esse quas rem numquam!</p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente cupiditate, illum, ad perspiciatis neque necessitatibus facere eos dolor qui fugiat velit sint? Nisi doloribus ipsa voluptates corrupti iusto rerum praesentium dolorum quibusdam,</b>
+
+        </div>
+    </div>
+
+    <!-- figure and figurecaption section -->
+    <div id="figrow">
+        <figure>
+            <img src="https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" width="200px" height="200px">
+            <figcaption><h3>Profile</h3></figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" width="200px" height="200px">
+            <figcaption><h3>Resume</h3></figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" width="200px" height="200px">
+            <figcaption><h3>Project</h3></figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="200px" height="200px">
+            <figcaption><h3>Contact</h3></figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div id="footer-div">
+            <p>Get connected with us on social network!</p>
+            <div>
+                <a href="https://web.facebook.com/stnezer"><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-google"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""> <i class="bi bi-instagram"></i> </a>
+            </div>
+        </div>
+        <div id="footer-main">
+            <div class="heads">
+                <div>
+                    <h2>COMPANY NAME</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos voluptatem quos amet tenetur, non repellat aspernatur nemo ratione repudiandae? Ex!</p>
+                </div>
+                <div>
+                    <h2>PRODUCTS</h2>
+                    <div>
+                        <h5>MDBootsrap</h5>
+                        <h5>MDWordPress</h5>
+                        <h5>BrandFlow</h5>
+                        <h5>Bootsrap</h5>
+                        <h5>Angular</h5>
+                    </div>
+
+                </div>
+                <div>
+                    <h2>USEFUL LINKS</h2>
+                    <div>
+                        <h5>Your Account</h5>
+                        <h5>Become an Affiliate</h5>
+                        <h5>Shipping Rate</h5>
+                        <h5>Help</h5>
+                    </div>
+                </div>
+                <div>
+                    <h2>CONTACT</h2>
+                    <div>
+                        <i class="bi bi-house">New York, NY 10012, US</i> <br><br><br>
+                        <i class="bi bi-envelope">info@example.com</i><br><br><br>
+                        <i class="bi bi-telephone">+0123456789</i><br><br><br>
+                        <i class="bi bi-telephone">+01234567899</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-foot">
+            <h4>
+                (c) 2022 Copyright: MDBootsrap.com
+            </h4>
+        </div>
+        
+    </footer>   
+</body>
+</html>
