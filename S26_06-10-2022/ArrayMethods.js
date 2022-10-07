@@ -16,14 +16,15 @@ var info = [
   "dcksb",
 ]; // 15
 
+
 //Apple     console.log(info[0])
 //Oneplus   console.log(info[1])
 //Vivo      console.log(info[2])
 //Samsung   console.log(info[3])
 //oppo      console.log(info[4])
 
-//forEach()
+//forEach(): use to know the number of element in a array
 
-info.forEach(function (element, index) {
+info.forEach(function ( index, element) {
   console.log(element, index);
 });
