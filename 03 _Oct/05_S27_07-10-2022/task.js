@@ -7,7 +7,7 @@ function tryThis(memberId, age) {
   return memberId == "able" && age >= 18 ? tru() : fals();
 }
 
-awesome("able", 10)
+awesome("able", 90)
   ? console.log("registered successfully")
   : console.log("oops" + " " + "you are not allowed");
 
