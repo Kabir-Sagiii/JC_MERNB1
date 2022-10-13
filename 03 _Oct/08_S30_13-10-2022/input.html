@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changePlaceholderValue() {
+        var inputReference = document.getElementById("textInput");
+
+        inputReference.placeholder = "Enter Username";
+        inputReference.value = "Javascript";
+      }
+
+      function changeBehaviour() {
+        var inputRef = document.getElementById("Input1");
+        inputRef.type = "password";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="textInput" placeholder="Enter Text" />
+      <button onclick="changePlaceholderValue()">Change Placeholder</button>
+    </div>
+
+    <div style="margin-top: 50px">
+      <input type="text" id="Input1" placeholder="Enter Text" />
+      <button onclick="changeBehaviour()">Change Input Behaviour</button>
+    </div>
+  </body>
+</html>

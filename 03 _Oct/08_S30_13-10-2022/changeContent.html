@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        height: 1200px;
+        margin: 0;
+        background-color: lightgreen;
+      }
+      div {
+        background-color: white;
+        width: 300px;
+        text-align: center;
+        margin: 100px auto;
+        padding: 50px;
+        border: 2px solid black;
+      }
+      button {
+        background-color: orangered;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+      }
+    </style>
+    <script>
+      function changeContent() {
+        //Reference of h2 Element
+        var h2Ref = document.getElementById("h2");
+        //updated the content of h2 element
+        h2Ref.innerText = "Hello Javascript,";
+
+        // for (var keys in h2Ref) {
+        //   console.log(keys);
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="h2">Welcome to HTML</h2>
+      <button onclick="changeContent()">Change Content</button>
+    </div>
+  </body>
+</html>

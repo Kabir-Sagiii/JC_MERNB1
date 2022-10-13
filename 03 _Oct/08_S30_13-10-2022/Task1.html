@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        height: 1200px;
+        margin: 0;
+        background-color: rgb(54, 51, 10);
+      }
+      div {
+        background-color: white;
+        width: 500px;
+        text-align: center;
+        margin: 100px auto;
+        padding: 50px;
+        border: 2px solid black;
+      }
+      button {
+        background-color: orangered;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+      }
+    </style>
+    <script>
+      function updateContent() {
+        //first step is to get the reference
+        var h2Ref = document.getElementById("h2id");
+        var pRef = document.getElementById("pid");
+        var bodyRef = document.getElementById("body");
+
+        h2Ref.innerText = "DOM AND DOM MANIPULATION";
+        h2Ref.style.color = "red";
+
+        pRef.innerText = "Started with DOM Manipulation Concept";
+        pRef.style.backgroundColor = "lightcoral";
+        pRef.style.color = "white";
+        pRef.style.padding = "20px";
+
+        bodyRef.style.backgroundColor = "lightsalmon";
+
+        for (var prop in pRef.style) {
+          console.log(prop);
+        }
+      }
+    </script>
+  </head>
+  <body id="body">
+    <div>
+      <h2 id="h2id">Welcome to Javascript</h2>
+      <p id="pid">Started with Javascript</p>
+      <button onclick="updateContent()">Change Content</button>
+    </div>
+  </body>
+</html>
