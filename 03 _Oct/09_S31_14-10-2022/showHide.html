@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        text-align: center;
+        padding: 50px;
+        width: 300px;
+        margin: 100px auto;
+        border: 2px solid red;
+      }
+    </style>
+
+    <script>
+      function showhidePassword() {
+        //reference of input
+        var inputReference = document.getElementById("pwd");
+        var buttonReference = document.getElementById("btn");
+
+        if (inputReference.type === "password") {
+          inputReference.type = "text";
+          buttonReference.innerText = "Hide Password";
+        } else {
+          inputReference.type = "password";
+          buttonReference.innerText = "Show Password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Show / Hide Password</h2>
+      <input id="pwd" type="password" placeholder="Enter Password" />
+      <button id="btn" onclick="showhidePassword()">Show Password</button>
+    </div>
+  </body>
+</html>

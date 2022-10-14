@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createH3() {
+        var inputRef = document.getElementById("i1");
+        var inputValue = inputRef.value;
+
+        //create h3 Element
+        var h3Ref = document.createElement("h3"); // <h3> </h3>
+        h3Ref.innerText = inputValue; // <h3> ------ </h3>
+
+        document.getElementById("body").appendChild(h3Ref);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <div>
+      <input id="i1" type="text" placeholder="Enter Text" />
+      <button onclick="createH3()">Submit</button>
+    </div>
+  </body>
+</html>

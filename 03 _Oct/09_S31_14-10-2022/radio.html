@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        height: 1200px;
+        background-color: lightcoral;
+      }
+      div {
+        background-color: rgb(104, 77, 77);
+        text-align: center;
+        padding: 50px;
+        width: 300px;
+        margin: 100px auto;
+        border: 2px solid red;
+        color: white;
+      }
+    </style>
+
+    <script>
+      function changePara(genderName) {
+        var pRef = document.getElementById("p1");
+        if (genderName === "male") {
+          pRef.innerText = "Male Radio button checked";
+        } else {
+          pRef.innerText = "Female Radio button checked";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input
+        id="male"
+        type="radio"
+        name="gender"
+        onchange="changePara('male')"
+      />MALE
+      <input
+        id="female"
+        type="radio"
+        name="gender"
+        onchange="changePara('female')"
+      />FEMALE
+
+      <p id="p1">Nothing is Selected</p>
+    </div>
+  </body>
+</html>
