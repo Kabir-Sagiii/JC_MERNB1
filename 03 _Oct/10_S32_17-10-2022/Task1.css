@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+.navContainer {
+    background-color: black;
+    display: flex;
+}
+.title {
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tableDiv {
+    padding: 30px;
+}
+.links {
+    width: 60%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+
+.mainContainer {
+    padding: 30px;
+}
+#btnShowInfo {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.radioContainer {
+    padding: 30px;
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
