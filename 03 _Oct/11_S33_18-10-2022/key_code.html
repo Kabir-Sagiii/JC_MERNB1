@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fn(event) {
+        console.log("Key Name : ", event.key);
+        console.log("Key Code : ", event.code);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" onkeydown="fn(event)" />
+  </body>
+</html>

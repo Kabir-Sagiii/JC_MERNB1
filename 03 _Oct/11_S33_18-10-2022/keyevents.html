@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function f1(e) {
+        console.log("keyup event occured");
+        console.log(e.key); //event.name = undefined
+      }
+      function f2(e) {
+        console.log("keydown event occured");
+        console.log(e.key);
+      }
+      function f3(e) {
+        console.log("keypress event occured");
+        console.log(e.key);
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="password"
+      placeholder="Enter Text"
+      onkeyup="f1(event)"
+      onkeydown="f2(event)"
+      onkeypress="f3(event)"
+    />
+  </body>
+</html>

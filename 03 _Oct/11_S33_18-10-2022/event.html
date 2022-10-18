@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changeBodyColor(event) {
+        document.getElementById("body").style.backgroundColor = "orange";
+        console.log(event.key);
+      }
+      function f1() {
+        document.getElementById("btn").style.backgroundColor = "orangered";
+        document.getElementById("btn").style.color = "white";
+      }
+
+      function f2() {
+        document.getElementById("btn").style.backgroundColor = "lightsalmon";
+        document.getElementById("btn").style.color = "white";
+      }
+    </script>
+  </head>
+  <body id="body">
+    <button
+      id="btn"
+      onclick="changeBodyColor(event)"
+      onmouseenter="f1()"
+      onmouseleave="f2()"
+    >
+      Event
+    </button>
+  </body>
+</html>

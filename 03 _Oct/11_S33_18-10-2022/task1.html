@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0;
+      }
+      div {
+        padding: 50px;
+      }
+      .GFather {
+        border: 6px solid red;
+      }
+      .Father {
+        border: 4px solid green;
+      }
+      .Child {
+        border: 2px solid black;
+      }
+    </style>
+    <script>
+      function fnChild() {
+        alert("Child div is called");
+      }
+      function fnFather() {
+        alert("Father div is called");
+      }
+      function fnGFather() {
+        alert("Grand Father div is called");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="GFather" onclick="fnGFather()">
+      Grand Father
+      <div class="Father" onclick="fnFather()">
+        Father
+        <div class="Child" onclick="fnChild()">Child</div>
+      </div>
+    </div>
+  </body>
+</html>
