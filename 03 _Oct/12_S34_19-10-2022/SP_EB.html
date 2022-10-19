@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        padding: 50px;
+      }
+      .GFather {
+        border: 6px solid red;
+      }
+      .Father {
+        border: 4px solid black;
+      }
+      .Child {
+        border: 2px solid green;
+      }
+    </style>
+    <script>
+      function addEvents() {
+        var gFatherDiv = document.getElementById("gfather");
+        var fatherDiv = document.getElementById("father");
+        var childDiv = document.getElementById("child");
+
+        gFatherDiv.addEventListener(
+          "click",
+          function (event) {
+            // event.stopPropagation();
+            alert("GFather div is called");
+          },
+          false
+        );
+        fatherDiv.addEventListener(
+          "click",
+          function (event) {
+            event.stopPropagation();
+            alert("Father div is called");
+          },
+          false
+        );
+        childDiv.addEventListener(
+          "click",
+          function (event) {
+            // event.stopPropagation();
+            alert("Child div is called");
+          },
+          false
+        );
+      }
+    </script>
+  </head>
+  <body onload="addEvents()">
+    <div class="GFather" id="gfather">
+      GFather
+      <div class="Father" id="father">
+        Father
+        <div class="Child" id="child">Child</div>
+      </div>
+    </div>
+  </body>
+</html>

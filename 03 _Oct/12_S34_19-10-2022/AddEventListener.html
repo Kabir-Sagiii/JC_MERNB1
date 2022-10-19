@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnAddEvent() {
+        var divRef = document.getElementById("d1");
+        divRef.addEventListener("click", function () {
+          divRef.style.backgroundColor = "black";
+          divRef.style.padding = "50px";
+          divRef.style.color = "white";
+        });
+        divRef.addEventListener("mouseenter", function () {
+          divRef.style.backgroundColor = "purple";
+          divRef.style.padding = "50px";
+          divRef.style.color = "white";
+        });
+        alert("Event added to div element");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum vitae
+      voluptas ratione cupiditate eum. Voluptatem modi eum eligendi illo
+      consequuntur, obcaecati unde tenetur? Totam sint, explicabo necessitatibus
+      aspernatur nulla enim? Tempore maiores repellat quisquam ipsa iure placeat
+      quos ullam sequi dolorem harum magni quis eligendi aperiam error
+      doloremque ea minus, distinctio impedit sunt, deserunt explicabo labore
+      hic laudantium? Animi eligendi excepturi omnis deleniti voluptatem
+      officiis commodi dolore sed est! Odio!
+    </div>
+
+    <button onclick="fnAddEvent()">Add Event</button>
+  </body>
+</html>
