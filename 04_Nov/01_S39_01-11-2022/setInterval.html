@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var clearColor;
+      function changeStyle() {
+        var body = document.getElementById("body");
+        var div = document.getElementById("d1");
+
+        clearColor = setInterval(function () {
+          if (body.style.backgroundColor === "lightcoral") {
+            body.style.backgroundColor = "lightgreen";
+          } else {
+            body.style.backgroundColor = "lightcoral";
+          }
+        }, 1000);
+      }
+
+      function fnclear() {
+        clearInterval(clearColor);
+      }
+      function fnstart() {
+        changeStyle();
+      }
+    </script>
+    <style>
+      body {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body id="body" onload="changeStyle()">
+    <div id="d1">
+      <h2>Welcome to HTML</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nesciunt
+        maxime dolorum aliquam qui nobis ullam facilis expedita repellendus
+        perspiciatis, quis tenetur, totam ipsam vero aliquid unde illum deleniti
+        voluptatem! Consequatur culpa impedit quaerat totam quidem dicta
+        asperiores qui laboriosam dolore deserunt, at repellendus sit ad modi
+        magni temporibus dolores ducimus rem. Harum illum ad perferendis est
+        similique mollitia voluptatibus officia ullam sit vitae! Velit tempore
+        unde odio dolore laboriosam hic deserunt accusamus repellat molestiae
+        alias. Autem tempore odio, perferendis laudantium dignissimos iste
+        dolores possimus sed veritatis tenetur suscipit. Aperiam fuga quam,
+        beatae voluptatibus, hic, quidem quas cum vel dicta dolorem fugit ut
+        iusto non consequatur voluptatum iure distinctio architecto? Commodi
+        culpa aliquam ipsum voluptates magni dolorem, repellendus omnis
+        obcaecati odio quibusdam! Ad voluptatum reiciendis odit temporibus
+        tempore doloribus quae quos porro? Laborum, rem? Eos dolor nisi quae
+        saepe molestiae quia nulla aperiam obcaecati enim quasi fugit autem,
+        ratione quaerat quidem veniam? Suscipit, debitis dolore ex eligendi
+        porro ipsum iste ratione laudantium blanditiis aspernatur! Omnis odit
+        earum sed esse necessitatibus architecto reiciendis nobis consequuntur,
+        optio quidem fugiat, error deserunt consequatur veritatis, et quis
+        distinctio animi dolorum voluptates libero laudantium! Qui ipsam culpa
+        fugiat ut recusandae autem quod iure aperiam enim saepe perspiciatis
+        excepturi ducimus, illum omnis quam placeat adipisci ullam repudiandae
+        temporibus possimus quas dicta? Commodi beatae nisi iure quasi placeat?
+        Quae, porro. Quo unde amet debitis illo odio impedit tenetur molestiae
+        in iusto sint esse obcaecati rem qui veniam cum neque nostrum magnam
+        tempora, sapiente repellendus quos voluptas facere! Eaque excepturi
+        nemo, eum iusto et cum odit delectus ratione praesentium, sunt corrupti
+        pariatur maiores? Ullam quod et aliquid ut fugiat facere aperiam, cumque
+        perspiciatis quasi velit maxime nulla aspernatur perferendis, suscipit
+        illo facilis aliquam dolor illum ea nam voluptates at iusto? Repudiandae
+        velit dolor nihil fugiat praesentium voluptatem nam.
+      </p>
+      <button onclick="fnclear()">Clear Interval</button>
+      <button onclick="fnstart()">Start Interval</button>
+    </div>
+  </body>
+</html>
