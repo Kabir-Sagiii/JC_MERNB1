@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    background-color: black;
+    text-align: right;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.content {
+    padding: 20px;
+}
+
+button {
+    background-color: orangered;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+#card {
+   
+padding: 30px;
+margin-top: 20px;
+}

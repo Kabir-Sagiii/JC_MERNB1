@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="Electronic.css" />
-    <script src="Electronic.js"></script>
+    <link rel="stylesheet" href="Ajax.css" />
+    <script src="ajax.js"></script>
   </head>
-  <body onload="getElectronicData()">
+  <body>
     <div class="nav">
-      <a href="Ajax.html">Home</a>
+      <a href="Home.html">Home</a>
       <a href="Electronic.html">Electronics</a>
-      <a href="">Users</a>
-      <a href="">ContactUs</a>
+      <a href="Ajax.html">Users</a>
+      <a href="Contact.html">ContactUs</a>
     </div>
 
     <div class="content">
-      <h2>Electronic Information</h2>
+      <h2>Users Information</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
         similique? Mollitia eos nobis ipsa nisi distinctio. Error suscipit hic
@@ -39,7 +39,19 @@
         suscipit tempora possimus sed expedita vel dolorem quod libero
         aspernatur.
       </p>
+      <button onclick="getUsers()">User Details</button>
     </div>
-    <div id="card"></div>
+
+    <div id="users" class="users" style="display: none">
+      <table id="table">
+        <tr>
+          <th>IMAGE</th>
+          <th>NAME</th>
+          <th>GENDER</th>
+          <th>EMAIL</th>
+          <th>PHONE</th>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
