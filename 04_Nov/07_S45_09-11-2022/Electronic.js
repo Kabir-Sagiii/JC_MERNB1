@@ -37,6 +37,10 @@ function createCard(data) {
     var a = document.createElement("a");
     a.href = "ProductDetails.html";
 
+    btn.onclick = function () {
+      sessionStorage.setItem("id", ele.id);
+    };
+
     img.src = ele.image;
     img.style.width = "100%";
     img.style.height = "200px";
@@ -46,9 +50,7 @@ function createCard(data) {
     btn.innerText = "More Details";
 
     btn.style.textAlign = "center";
-    btn.onclick = function () {
-      sessionStorage.setItem("id", ele.id);
-    };
+
     a.appendChild(btn);
     div.appendChild(img);
     div.appendChild(h4);

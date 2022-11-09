@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    background-color: black;
+    text-align: right;
+    padding: 20px;
+}
+h2{
+    margin: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.product {
+    width: 1000px;
+    box-shadow: 0  0 30px green;
+    margin: auto;
+    background-color: bisque;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 100px;
+}
+dt {
+    color: green;
+}

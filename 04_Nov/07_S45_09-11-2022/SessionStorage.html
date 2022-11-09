@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Session Storage Document</title>
+    <script>
+      function insertData() {
+        sessionStorage.setItem("id", 101);
+        sessionStorage.setItem("name", "Darsh");
+        sessionStorage.setItem("city", "Delhi");
+      }
+
+      function getData() {
+        var id = sessionStorage.getItem("id");
+        var name = sessionStorage.getItem("name");
+        console.log(id, name);
+      }
+      function removeData() {
+        // sessionStorage.removeItem("city");
+        sessionStorage.clear();
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <h2>Session Storage</h2>
+      <button onclick="insertData()">Insert Data</button>
+      <button onclick="getData()">Get Data</button>
+      <button onclick="removeData()">Remove Data</button>
+    </div>
+  </body>
+</html>
