@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #login {
+        text-align: center;
+        width: 300px;
+        padding: 50px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+      }
+    </style>
+    <script>
+      function checkData() {
+        //get the reference of html element like inputs and paragraph
+        var inputText = document.getElementById("name");
+        var inputPassword = document.getElementById("pwd");
+        var usernamePara = document.getElementById("username");
+        var passwordPara = document.getElementById("password");
+
+        //create the pattern for user name
+        var usernamePattern = /[a-zA-Z]{4}/;
+        // alert(usernamePattern.test(inputText.value));
+
+        var passwordPattern = /^\@[a-zA-Z0-9]{5}\$$/;
+        // alert(passwordPattern.test(inputPassword.value));
+
+        if (usernamePattern.test(inputText.value)) {
+          if (passwordPattern.test(inputPassword.value)) {
+            passwordPara.innerText = "";
+            usernamePara.innerText = "";
+            alert("Login successfully");
+          } else {
+            usernamePara.innerText = "";
+            passwordPara.innerText = "Invalid Password";
+            passwordPara.style.color = "red";
+          }
+        } else {
+          usernamePara.innerText = "Invalid User name";
+          usernamePara.style.color = "red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="login">
+      <h2>Login Form</h2>
+      <div>
+        <input type="text" placeholder="Enter Username" id="name" />
+        <p id="username"></p>
+      </div>
+      <br />
+      <div>
+        <input type="password" placeholder="Enter Password" id="pwd" />
+        <p id="password"></p>
+      </div>
+      <br />
+      <button onclick="checkData()">Login</button>
+    </div>
+  </body>
+</html>

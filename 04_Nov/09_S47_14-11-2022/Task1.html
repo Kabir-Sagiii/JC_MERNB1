@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        width: 300px;
+        padding: 50px;
+        box-shadow: 0 0 10px black;
+        margin: 100px auto;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function checkData() {
+        let pattern = /kabir/;
+        var p = document.getElementById("p1");
+        var inputValue = document.getElementById("input").value;
+
+        if (pattern.test(inputValue)) {
+          p.innerText = "Given Data is Valid";
+          p.style.color = "green";
+        } else {
+          p.innerText = "Given Data is Not Valid";
+          p.style.color = "red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="input" />
+      <button onclick="checkData()">Check Data</button>
+      <p id="p1"></p>
+    </div>
+  </body>
+</html>

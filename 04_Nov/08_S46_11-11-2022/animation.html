@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @keyframes divstyle {
+        from {
+          background-color: lightsalmon;
+          width: 150px;
+        }
+        to {
+          background-color: red;
+          width: 800px;
+        }
+      }
+
+      @keyframes percentagestyle {
+        10% {
+          background-color: lightsalmon;
+        }
+        25% {
+          background-color: red;
+          /* width: 300px; */
+        }
+        50% {
+          background-color: black;
+          /* width: 50px; */
+          /* transform: rotate(30deg); */
+        }
+        75% {
+          background-color: orange;
+          /* width: 800px; */
+        }
+        100% {
+          background-color: blue;
+          /* width: 150px; */
+          /* transform: rotate(-30deg); */
+        }
+      }
+
+      .animationDiv {
+        width: 150px;
+        height: 150px;
+        background-color: blueviolet;
+        animation-name: percentagestyle;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        /* animation-iteration-count: 2; */
+        /* animation-direction: alternate-reverse; */
+        /* transition-duration: 4s; */
+        animation-fill-mode: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Animations in CSS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
+        sequi, suscipit voluptatibus corrupti dicta provident quam reiciendis
+        mollitia facilis pariatur cumque molestias deserunt doloremque impedit
+        amet quibusdam praesentium quo. Voluptatibus animi, accusamus minus non
+        possimus necessitatibus quae magnam provident.
+      </p>
+
+      <div class="animationDiv"></div>
+    </div>
+  </body>
+</html>

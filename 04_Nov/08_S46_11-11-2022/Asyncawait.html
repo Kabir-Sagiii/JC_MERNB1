@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      async function fnGetData() {
+        var res = await fetch("https://fakestoreapi.com/products");
+        console.log(res);
+
+        var data = await res.json();
+
+        console.log(data);
+        // await fn();
+      }
+
+      function fn() {
+        return "Dummy function";
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <h2>Handle the Promise using async await</h2>
+      <button onclick="fnGetData()">Get Information</button>
+    </div>
+  </body>
+</html>
