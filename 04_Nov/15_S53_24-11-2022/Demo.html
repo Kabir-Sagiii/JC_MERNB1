@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        background-color: black;
+        padding: 20px;
+        text-align: right;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .card {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px black;
+        /* border: 2px solid black; */
+      }
+
+      @media screen and (min-width: 400px) and (max-width: 799px) {
+        #container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 399px) {
+        #container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        #container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Service</a>
+      <a href="">Profile</a>
+      <a href="">ContactUs</a>
+    </nav>
+
+    <div style="padding: 30px" id="container">
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg"
+          width="100%"
+          height="200"
+        />
+        <div style="text-align: center">
+          <p>John Jerry</p>
+          <p>Male</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://th.bing.com/th/id/R.2b5bd35b4bd76f7abab7c68e97ca189a?rik=GmbwRLSbY2lqjA&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f190000%2fvelka%2fyoung-business-woman-1470305650ScK.jpg&ehk=BjHdk%2fCMIq4h2q2dRd4aoDFckcQcdZvLehSxmjPkFEI%3d&risl=&pid=ImgRaw&r=0"
+          width="100%"
+          height="200"
+        />
+        <div style="text-align: center">
+          <p>Zoya Khan</p>
+          <p>Female</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://th.bing.com/th/id/OIP.tGjpw57EuE1A2ZKL9eJpLgHaJ3?pid=ImgDet&rs=1"
+          width="100%"
+          height="200"
+        />
+        <div style="text-align: center">
+          <p>Alina Bezz</p>
+          <p>Female</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/originals/24/72/65/24726529048b88ac579fc6a93205c0c6.jpg"
+          width="100%"
+          height="200"
+        />
+        <div style="text-align: center">
+          <p>Rithivk Sharma</p>
+          <p>Male</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
