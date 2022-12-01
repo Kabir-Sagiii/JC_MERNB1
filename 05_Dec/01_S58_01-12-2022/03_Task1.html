@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      function createUI() {
+        var h2 = React.createElement("h2", null, "React Element");
+        var p = React.createElement(
+          "p",
+          null,
+          "React  is a Javascript Library"
+        );
+
+        var div = React.createElement(
+          "div",
+          {
+            style: {
+              textAlign: "center",
+              width: "500px",
+              padding: "30px",
+              boxShadow: "0 0 10px black",
+              backgroundColor: "lightgreen",
+            },
+            id: "div1",
+            class: "div11",
+          },
+          [h2, p]
+        );
+
+        ReactDOM.render(div, document.getElementById("root"));
+      }
+      createUI();
+    </script>
+  </body>
+</html>

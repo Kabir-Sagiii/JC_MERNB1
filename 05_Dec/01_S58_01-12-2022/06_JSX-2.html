@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createImage() {
+        var imgageVariable = (
+          <div>
+            <img
+              src="https://th.bing.com/th/id/OIP.Cf3rSUAqoBhMkJ-HTHq2aAHaLH?pid=ImgDet&rs=1"
+              width="300"
+              height="300"
+              alt="some image"
+            />
+            <p> John Chris </p>
+          </div>
+        );
+
+        ReactDOM.render(imgageVariable, document.getElementById("root"));
+      }
+
+      createImage();
+    </script>
+  </body>
+</html>

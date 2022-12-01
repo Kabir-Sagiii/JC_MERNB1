@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        style="
+          width: 500px;
+          box-shadow: 0 0 10px black;
+          padding: 30px;
+          margin: 100px auto;
+          text-align: center;
+        "
+      >
+        <h2>HTML CONTENT</h2>
+        <p>HTML is a markup lanaguage</p>
+      </div>
+
+      <div
+        style="
+          width: 500px;
+          box-shadow: 0 0 10px black;
+          padding: 30px;
+          margin: 100px auto;
+          text-align: center;
+        "
+      >
+        <h2>HTML CONTENT</h2>
+        <p>HTML is a markup lanaguage</p>
+      </div>
+      <div
+        style="
+          width: 500px;
+          box-shadow: 0 0 10px black;
+          padding: 30px;
+          margin: 100px auto;
+          text-align: center;
+        "
+      >
+        <h2>HTML CONTENT</h2>
+        <p>HTML is a markup lanaguage</p>
+      </div>
+    </div>
+
+    <script>
+      function createUI() {
+        var div = document.createElement("div");
+        var h2 = document.createElement("h2");
+        var p = document.createElement("p");
+
+        h2.innerText = "Javascript Concept";
+        p.innerText = "JS is a Programming Language";
+
+        div.appendChild(h2);
+        div.appendChild(p);
+        div.style.textAlign = "center";
+        div.style.boxShadow = "0 0 10px black";
+        div.style.width = "500px";
+        div.style.padding = "30px";
+        div.style.margin = "100px auto";
+
+        document.getElementById("root").appendChild(div);
+      }
+      createUI();
+      createUI();
+      createUI();
+    </script>
+  </body>
+</html>

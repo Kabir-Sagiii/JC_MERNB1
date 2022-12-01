@@ -1,0 +1,22 @@
+<div
+  style="
+    width: 500px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    margin: 100px auto;
+    text-align: center;
+  "
+>
+  <h2>HTML CONTENT</h2>
+  <p>HTML is a markup lanaguage</p>
+</div>
+
++ createUI(); createUI(); createUI(); JSX = Javascript and XML Using JSX
+technique or synatx, we can write html and js code together
+
+<div>{javascript}</div>
+
+or function fn(){
+
+<div></div>
+}
