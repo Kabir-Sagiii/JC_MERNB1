@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Footer() {
+        var footerStyle = {
+          backgroundColor: "black",
+          color: "cornsilk",
+          padding: "50px",
+          textAlign: "center",
+          marginTop: "100px",
+        };
+        return (
+          <div style={footerStyle}>
+            <h4>All Copyrights are Reserved by Kabir</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              eum saepe asperiores assumenda natus possimus? Cumque saepe fuga
+              dolor non perferendis a aut unde in obcaecati? Rem, earum
+              laboriosam. Suscipit?
+            </p>
+          </div>
+        );
+      }
+      function CreateNav() {
+        var navStyle = {
+          backgroundColor: "black",
+          padding: "20px",
+          textAlign: "right",
+        };
+
+        var astyle = {
+          marginRight: "50px",
+          color: "white",
+          textDecoration: "none",
+        };
+
+        return (
+          <div style={navStyle}>
+            <a style={astyle} href="">
+              Home
+            </a>
+            <a style={astyle} href="">
+              Services
+            </a>
+            <a style={astyle} href="">
+              Profile
+            </a>
+            <a style={astyle} href="">
+              Contact Us
+            </a>
+          </div>
+        );
+      }
+
+      function CreateCard(obj) {
+        var cardStyle = {
+          width: "250px",
+          padding: "30px",
+          textAlign: "center",
+          boxShadow: "0 0 10px black",
+        };
+
+        var card = (
+          <div style={cardStyle}>
+            <img src={obj.img} width="100%" height="200" />
+            <h2>{obj.name}</h2>
+            <p>{obj.gender}</p>
+          </div>
+        );
+
+        return card;
+      }
+
+      function Main() {
+        var containerStyle = {
+          display: "flex",
+          justifyContent: "space-evenly",
+          marginTop: "50px",
+        };
+        var container = (
+          <div>
+            <CreateNav />
+
+            <div style={containerStyle}>
+              <CreateCard
+                img="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+                name="Rohan Verma"
+                gender="Male"
+              />
+
+              <CreateCard
+                img="https://www.rhondaboyle.com/wp-content/uploads/2017/05/Man_black_professional-e1495580003270.jpeg"
+                name="Rahul Sinha"
+                gender="Male"
+              />
+
+              <CreateCard
+                img="https://i.pinimg.com/originals/f9/2d/a9/f92da9e8f055402408a18488943b0b84.jpg"
+                name="Aditya Sharma"
+                gender="Male"
+              />
+            </div>
+            <Footer />
+          </div>
+        );
+
+        ReactDOM.render(container, document.getElementById("root"));
+      }
+      Main();
+    </script>
+  </body>
+</html>

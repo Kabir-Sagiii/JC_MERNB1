@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateDiv(props) {
+        var divStyle = {
+          width: "800px",
+          padding: "50px",
+          backgroundColor: props.color,
+          margin: "30px auto",
+          textAlign: "center",
+          color: props.textcolor,
+        };
+        return (
+          <div style={divStyle}>
+            <h2>{props.title}</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem enim illum aliquam omnis libero fugiat aspernatur,
+              veritatis maxime dignissimos ex ullam delectus impedit harum
+              accusantium modi, amet deserunt provident! Nostrum architecto
+              optio assumenda praesentium delectus! Repellendus saepe eveniet
+              reiciendis dolorem perspiciatis id! Reprehenderit esse ullam rem
+              modi, tenetur nobis deleniti.
+            </p>
+          </div>
+        );
+      }
+
+      function Main() {
+        var container = (
+          <div>
+            <CreateDiv
+              color="lightgreen"
+              title="Introduction to React"
+              textcolor="black"
+            />
+            <CreateDiv
+              color="orangered"
+              title="Introduction to Angular"
+              textcolor="cornsilk"
+            />
+            <CreateDiv
+              color="lightsalmon"
+              title="Introduction to NodeJS"
+              textcolor="white"
+            />
+          </div>
+        );
+
+        ReactDOM.render(container, document.getElementById("root"));
+      }
+      Main();
+    </script>
+  </body>
+</html>
