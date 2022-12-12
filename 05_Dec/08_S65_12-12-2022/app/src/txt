@@ -1,0 +1,7 @@
+<img src="" width="" />;
+
+React.createElement("img", {
+  src: "",
+  width: "",
+  height: "",
+});
