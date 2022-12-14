@@ -1,0 +1,27 @@
+.productContainer {
+    margin: 50px auto;
+    width: 1000px;
+   
+    /* height:"500px"; */
+    box-shadow: 0 0 20px green;
+    display: flex;
+}
+.categories {
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    width: 30%;
+    background-color: black;
+  
+}
+.title {
+    width: 70%;
+
+}
+a {
+ color:white;
+ text-decoration: none;
+}
