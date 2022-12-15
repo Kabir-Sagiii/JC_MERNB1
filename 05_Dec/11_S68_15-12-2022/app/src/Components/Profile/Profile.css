@@ -1,0 +1,6 @@
+.profileContainer {
+    width: 1000px;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+}
