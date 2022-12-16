@@ -8,6 +8,8 @@ function Electronic(props) {
   const electronicData = useSelector((storedata) => {
     return storedata.myReducer.electronics;
   });
+
+  console.log("Electronic Data", electronicData);
   const dispatch = useDispatch();
 
   useEffect(() => {

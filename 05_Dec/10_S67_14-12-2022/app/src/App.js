@@ -21,8 +21,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <UseReducerComp />
-      {/* <Routes>
+      {/* <UseReducerComp /> */}
+      <Routes>
         <Route path="/" element={<Parent />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/context" element={<A />} />
@@ -49,7 +49,7 @@ function App() {
             </div>
           }
         />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

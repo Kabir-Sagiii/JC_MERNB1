@@ -21,12 +21,12 @@ const myReducer = (state = initialState, action) => {
       };
       break;
 
-    case "ELECTRONICS":
-      state = {
-        ...state,
-        electronics: action.payload,
-      };
-      break;
+    // case "ELECTRONICS":
+    //   state = {
+    //     ...state,
+    //     electronics: action.payload,
+    //   };
+    //   break;
     case "JEWELERYS":
       state = {
         ...state,
