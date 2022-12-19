@@ -1,0 +1,41 @@
+{
+
+    "status":"success",
+ "data":[
+        {
+            "name":"Chris",
+            "gender":"male",
+            "id":1,
+            "city":"London"
+        },
+        {
+             "name":"John",
+            "gender":"male",
+            "id":2,
+            "city":"Manchester"
+        },
+        {
+             "name":"Alina",
+            "gender":"female",
+            "id":3,
+            "city":"NY"
+        },
+        {
+             "name":"Rahul",
+            "gender":"male",
+            "id":4,
+            "city":"Delhi"
+        },
+        {
+             "name":"Zoya",
+            "gender":"female",
+            "id":5,
+            "city":"Sydney"
+        }
+    ],
+"info":{
+        "statuscode":"Will be defined Later",
+        "id":101
+    }
+    
+}

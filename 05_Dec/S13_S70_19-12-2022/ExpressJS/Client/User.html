@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getData() {
+        fetch("http://localhost:4001/json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            var ol = document.createElement("ol");
+            data.data.map((ele) => {
+              var li = document.createElement("li");
+              li.innerText = ele.name;
+              ol.appendChild(li);
+              document.getElementById("body").appendChild(ol);
+            });
+          });
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h2>Client Application</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius
+      ullam iure architecto natus voluptates non nesciunt vero facere error
+      deserunt ut eligendi repellat aperiam beatae maiores itaque id, incidunt
+      vel quia accusamus maxime labore reprehenderit quis. Magnam quam optio
+      debitis nemo aliquam dolore inventore repudiandae iste veritatis voluptate
+      aliquid quas culpa tempore porro nesciunt, tenetur velit dolor? Excepturi,
+      minus. Molestias magnam labore, culpa doloremque qui, quis necessitatibus
+      iure illum non commodi quibusdam eaque dolorum animi. Possimus voluptate
+      corrupti voluptas omnis odio est, eveniet explicabo itaque excepturi
+      ducimus illo. Ab ducimus alias cum quasi iusto vitae ea optio. Est, eaque!
+    </p>
+    <button onclick="getData()">Get User Data</button>
+  </body>
+</html>
