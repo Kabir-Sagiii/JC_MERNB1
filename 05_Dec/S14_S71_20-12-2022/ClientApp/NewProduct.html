@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="NewProduct.js"></script>
+    <style>
+      form div {
+        margin: 20px;
+      }
+      #container {
+        width: 500px;
+        box-shadow: 0 0 10px green;
+        padding: 30px;
+        text-align: center;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Register New Product</h2>
+      <!-- <form onclick="getData()"> -->
+      <div>
+        <input id="name" type="text" placeholder="Enter Product Name" />
+      </div>
+      <div>
+        <input id="price" type="text" placeholder="Enter Product Price" />
+      </div>
+      <div>
+        <input id="cat" type="text" placeholder="Enter Product Category" />
+      </div>
+      <button onclick="getData()">Add Product</button>
+      <!-- </form> -->
+    </div>
+  </body>
+</html>

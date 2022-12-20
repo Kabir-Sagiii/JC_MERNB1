@@ -1,0 +1,1 @@
+{"name":"laptop","price":"150","category":"electronic"}
