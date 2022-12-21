@@ -8,7 +8,7 @@ function getData() {
     price: price,
     category: category,
   };
-  fetch("http://localhost:6001/data", {
+  fetch("http://localhost:6001/senddb", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

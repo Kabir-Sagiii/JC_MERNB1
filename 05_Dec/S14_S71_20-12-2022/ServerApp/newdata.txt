@@ -1,1 +1,1 @@
-{"name":"laptop","price":"150","category":"electronic"}
+{"name":"S1","price":"99","category":"electronics"}
