@@ -4,3 +4,46 @@ How to enter into Mongodb shell
 
 How to access list of databases
         - show dbs
+
+How to switch from one database to another database 
+        - use <database name>
+
+How to access list of collection inside the database 
+        - show collections
+
+How to access all documents fromm the collection 
+        - db.<collection name>.find() 
+        - db.<collection name>.findOne() 
+
+How to insert the document inside the collection 
+        - db.<collection name>.insertOne() 
+        - db.<collection name>.insertMany([{},{},{}])
+
+How to update Field inside the document 
+        - db.<collection name>.updateOne({_id:ObjectId('')}, {$set:{name:"Mac book pro"}})
+
+How to delete document from the collection 
+        - db.<collection name>.deleteOne({})
+        - db.<collection name>.deleteMany({})
+
+How to connect with Mongodb Cloud 
+     open terimal and enter url provided by cloud 
+
+How to find no. of documents inside collection 
+        - db.<collection name>.countDocuments()
+        - db.<collection name>.find().count()
+
+
+
+How to access specific fields from the document 
+         - db.<collection name>.findOne({_id:---},{<fieldname:1>,<fieldname2:1>})
+
+How to find first 10  documents present in the Collection ?
+
+        - db.<collection name>.find().limit(<no. of documents>)
+      
+          
+
+
+
+        
