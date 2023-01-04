@@ -1,5 +1,6 @@
 var express = require("express");
 var User = require("../Model/UserSchema");
+var bycrypt = require("bcryptjs");
 
 var userroute = express.Router();
 
@@ -42,8 +43,13 @@ userroute.get("/specificuser", (req, res) => {
 
 userroute.post("/newuser", (req, res) => {
   //http://localhost:5001/user/newuser
+
+  var salt = bycrypt.genSaltSync(10);
+  var hashpassword = bycrypt.hashSync(req.body.password, salt);
+
   var newuser = new User({
     name: req.body.name,
+    password: hashpassword,
     email: req.body.email,
     phone: req.body.phone,
   });

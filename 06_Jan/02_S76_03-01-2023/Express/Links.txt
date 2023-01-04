@@ -1,0 +1,9 @@
+Mongodb Installation on Windows
+--------------------------------------------
+https://www.youtube.com/watch?v=6_NSkDRXPZk
+
+
+
+Mongodb Installation on Mac
+--------------------------------------
+https://www.youtube.com/watch?v=s1WQ0eEpqqg&t=330s

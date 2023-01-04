@@ -1,0 +1,6 @@
+
+How to enter into Mongodb shell 
+        - mongosh 
+
+How to access list of databases
+        - show dbs
