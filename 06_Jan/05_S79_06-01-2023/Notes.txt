@@ -1,0 +1,232 @@
+[
+   {name:"N1",quantity:100,price:8989,rating:4.5},
+ {name:"N2",quantity:600,price:1989,rating:4.8},
+ {name:"N3",quantity:300,price:9989,rating:4.1},
+ {name:"N4",quantity:500,price:7989,rating:4.2},                                     10,000  ---- 1 --- Slow
+ {name:"N5",quantity:400,price:2989,rating:3.5},                                      Indexes() - field of document-- sort  - fast 
+ {name:"N6",quantity:900,price:0989,rating:1.5},
+
+
+]
+
+      Indexes
+--------------------------   _id   quantity and price
+ 
+                   createIndex({price:1})  : access of documents -- Indexes 
+                                                         Insert or Update or Delete --- Avoid Indexes
+----------------------------------------------------------------------------------------------------------------------
+                                                   db.<collection name>.dropIndexes()                              simple index
+                                                  db.<collection name>.createIndex({quantity:1,price:1}) : compound Index
+
+
+
+
+
+
+
+sort(), Limit(), Count()
+What is Index and Puspose of it
+How to create
+How to drop
+Types of Indexes
+       - Simple
+       - Compound
+-----------------------------------------------------------------------
+HTML
+CSS
+JS
+GIT
+REACT
+NODE
+EXPRESS
+MONGODB
+
+Linux: 2
+Unit Testing : 2
+--------------------------------------------------------------------------------------------------
+
+
+
+    Linux Commands
+   --------------------------
+
+                        Linux : Operating system
+       
+What is Operating System     windows, Linux , Mac OS, Android,
+----------------------------------
+
+   OS is a software 
+
+What is the purpose of OS
+----------------------------------
+It used as Interface between Software and Hadware  
+
+                        windows Linux Unix Mac 
+
+
+Linux :
+--------------
+
+                                        Unix and Linux
+                                         -------------------
+                                      Unix is OS which was developed Completely on C Language
+                                                 kenthomsan and dennis Ritche (c language)
+                                      Unix OS as open source --- Entire world-- 1969 or 73
+
+                                   Solaries (OS)
+                                   sunMicrosystem      ---  
+
+                                    Alx
+                                    (IBM)
+                                   
+                                    HP-UX
+                                       HP
+
+                                    Linux     : Linus          1991 --- Open source
+
+
+
+                                       CLI based OS
+                                       commands 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                     - Open Source 
+                                     - Multi tasking 
+                                     - multi Users
+                                     - Portable 
+                                     - reliable    Large servers - , Secued OS,
+
+
+
+                                              
+
+                      Unix
+
+                      Linux - Open Source --- Source code was available for entire world in free of cost
+                      
+                      600 OS - 300 OS active 
+
+                      Ubuntu, Fedora, Kali, CentOS etc : Linux Distribution
+
+                      Ubuntu : Window or Mac
+                       
+                       Virtualbox software --- Install Multiple OS
+
+                             iso
+                        Ubuntu on Virtualbox
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Virtualbox(https://www.virtualbox.org/wiki/Downloads) and 
+
+    download ubuntu iso (https://ubuntu.com/download/desktop)
+
+    How to install Ubuntu on Mac
+
+  https://www.youtube.com/watch?v=b_tOialCSXE
+
+
+   How to install Ubuntu on windows                                          window - folder , Linux - directory 
+
+https://www.youtube.com/watch?v=v1JVqd8M3Yc
+
+  commands                                           shell scripting ---- Programs --- Multiple commands- at one time
+                                                                                                Folder - File -- add some content
+  ---------------
+       1000 + 
+           documentation
+
+
+-------------------------------------------------------------------
+
+whoami : current User
+
+ls : List out all Directories and files 
+
+cd .. : It will Navigate to Parent Directory 
+
+cd <directory name> : It will navigate to Sub Directory
+
+touch <filename>.<extension>
+
+cd / : It will directly navigate to the root directory
+
+cd ~
+
+touch <filename>.<extension>
+
+touch <filename1>.<extension>  <filename1>.<extension>  <filename1>.<extension>
+
+rm <filename>.<extension>
+
+rmdir <directory name>
+
+cat <file name> : It will show the content of file in the read mode 
+
+cat >> File name: It will allow to add some content in the file
+
+cp file1 file2
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       
+
+                      
+ 
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
